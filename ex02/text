@@ -1,0 +1,6 @@
+определить строку:
+	std::strins str;
+сделать на нее указатель:
+	std::string *p_str = &str;
+сделать на нее ссылку:
+	std::string &ref_str = str;
