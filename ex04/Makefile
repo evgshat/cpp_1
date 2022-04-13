@@ -1,10 +1,10 @@
-NAME	=	Moar_brainz
+NAME	=	Sed_is_for_losers
 CC		=	clang++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
-SRCS	=	main.cpp Zombie.cpp zombieHorde.cpp
+SRCS	=	main.cpp sed.cpp
 OBJS	=	${SRCS:.cpp=.o}
 RM		=	rm -rf
-HEADERS	=	Zombie.hpp
+HEADERS	=	sed.hpp
 
 all: ${NAME}
 

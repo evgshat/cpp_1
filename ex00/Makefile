@@ -1,9 +1,9 @@
+NAME	=	BraiiiiiiinnnzzzZ
 CC		=	clang++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98
-NAME	=	BraiiiiiiinnnzzzZ
-RM		=	rm -rf
-SRCS	=	main.cpp randomChump.cpp newZombie.cpp Zombie.cpp
+SRCS	=	main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
 OBJS	=	${SRCS:.cpp=.o}
+RM		=	rm -rf
 HEADERS	=	Zombie.hpp
 
 all: ${NAME}
@@ -11,7 +11,7 @@ all: ${NAME}
 ${NAME}: ${OBJS}
 	${CC} ${FLAGS} $^ -o $@
 
-%.o: %.cpp ${HEADERS} Makefile
+%.o: %.cpp Makefile ${HEADERS}
 	${CC} ${FLAGS} -c $< -o $@
 
 clean:
@@ -21,6 +21,3 @@ fclean: clean
 	${RM} ${NAME}
 
 re: fclean all
-
-.PHONY: all clean fclean re
-

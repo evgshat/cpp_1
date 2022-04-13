@@ -1,7 +1,7 @@
 #include "Zombie.hpp"
 
-void randomChump(std::string name)
+void	Zombie::randomChump( std::string name )
 {
-	Zombie	Zomb(name);
-	Zomb.announce();
+	Zombie zomb(name);
+	zomb.announce();
 }

@@ -1,11 +1,13 @@
 #include "Zombie.hpp"
 
-int	main()
+int main()
 {
-	Zombie Zomb1("Zomb1");
-	Zomb1.announce();
-	randomChump("Zomb2");
-	Zombie *Zomb3 = newZombie("Zomb3");
-	Zomb3->announce();
-	delete Zomb3;
+	//стек
+	Zombie	zomb("Hehe");
+	zomb.announce();
+	zomb.randomChump("Vavav");
+	//в куче
+	Zombie *zomb_1 = zomb.newZombie("Kek");
+	zomb_1->announce();
+	delete zomb_1;
 }
