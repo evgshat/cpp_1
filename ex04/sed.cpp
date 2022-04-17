@@ -13,9 +13,9 @@ void Sed::replace(const std::string& file, const std::string& s1, const std::str
 	if (!s1.size() || !s2.size())
 		throw("Wrong argument. Empty str.");
 	// outFile.strlen();
-	int len_file = std::strlen(outFile);
-	int len_s1   = strlen(s1);
-	int len_s2   = strlen(s2);
+	// int len_file = outFile.size();
+	// int len_s1   = s1.size();
+	// int len_s2   = s1.size();
 
 	int for_s1 = 0;
 	int for_s2 = 0;
