@@ -1,10 +1,10 @@
-NAME	=	Unnecessary_violence
+NAME	=	Harl
 CC		=	clang++
 FLAGS	=	-Wall -Wextra -Werror -std=c++98 -g
-SRCS	=	main.cpp  Weapon.cpp HumanA.cpp HumanB.cpp
+SRCS	=	main.cpp Harl.cpp
 OBJS	=	${SRCS:.cpp=.o}
 RM		=	rm -rf
-HEADERS	=	Weapon.hpp HumanA.hpp HumanB.hpp
+HEADERS	=	Harl.hpp
 
 all: ${NAME}
 

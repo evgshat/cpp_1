@@ -1,0 +1,16 @@
+{
+	"configurations": [
+	{
+		"name": "(lldb) Launch",
+		"type": "cppdbg",
+		"request": "launch",
+		"program": "${workspaceFolder}/ex04/Sed_is_for_losers",
+		"args": ["text.txt", "hello", "world"],
+		"stopAtEntry": true,
+		"cwd": "${fileDirname}",
+		"environment": [],
+		"externalConsole": false,
+		"MIMode": "lldb"
+	}
+	]
+}

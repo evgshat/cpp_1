@@ -1,6 +1,6 @@
 NAME	=	Sed_is_for_losers
 CC		=	clang++
-FLAGS	=	-Wall -Wextra -Werror -std=c++98
+FLAGS	=	-Wall -Wextra -Werror -std=c++98 -g
 SRCS	=	main.cpp sed.cpp
 OBJS	=	${SRCS:.cpp=.o}
 RM		=	rm -rf
